@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Success</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+</head>
+
+<body>
+
+	<h1>
+        <b>
+            <a href="/">Inicio</a>
+        </b>
+    </h1>
+    <br>
+
+	<h3>Confirmation message : Dear <span th:text="${listaAlumno[0].first_Name}"></span>, your Registration completed successfully.
+
+	<br>We have also sent you a confirmation mail to your email address : <span th:text="${listaAlumno[0].email}"></span><br>
+
+    <br>Nombre: <span th:text="${listaAlumno[0].first_Name}"></span>
+
+    <br>Apellido: <span th:text="${listaAlumno[0].last_Name}"></span>
+
+    <br>Sexo: <span th:text="${listaAlumno[0].sex}"></span>
+
+    <br>Fecha de Nacimiento: <span th:text="${listaAlumno[0].dob}"></span>
+
+    <br>Mail: <span th:text="${listaAlumno[0].email}"></span>
+
+    <br>Nivel: <span th:text="${listaAlumno[0].section}"></span>
+
+    <br>Pais: <span th:text="${listaAlumno[0].country}"></span>
+
+    <br>Primer intento: <span th:text="${listaAlumno[0].first_Attempt}"></span>
+
+    <br>Materias: <span th:text="${listaAlumno[0].subjects}"></span></h3>
+
+    <form action="/consultar" method="GET"><br>
+        <h3><input type="submit" value="Consultar Materias"></h3>
+    </form>
+
+</body>
+</html>

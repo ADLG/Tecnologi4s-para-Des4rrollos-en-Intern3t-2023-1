@@ -1,0 +1,47 @@
+body{
+    background: black;
+    font-family: Lucida Sans Unicode;
+}
+
+#contenido{
+    width:  1100px;
+    border: 1px solid black;
+}
+
+.lista{
+    color: steelblue;
+}
+
+.fo{
+    color: lightyellow;
+}
+
+.lis{
+    color: blue;
+}
+
+.for{
+    color: yellow;
+}
+
+.Xenon{
+    font-size: 130%;
+    color: red;
+}
+
+article{
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+header{
+    background: limegreen;
+    height: 100px;
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    line-height: 100px;
+    color: white;
+    font-size: 140%;
+}

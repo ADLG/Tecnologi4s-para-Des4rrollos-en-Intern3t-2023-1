@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>Envio de mensajes</title>
+  </head>
+<body>
+<h1><b><a href="/">Inicio</a></b></h1>
+<center>       
+  <h1>Generación de mensajes</h1>
+  <form action="/envio" method="POST">
+  <br/><br/>
+  <b>Datos del mensaje :</b><br/><br/>
+     Introduzca el destinatario :  <input type="text" name="destinatario"><br/>
+  <br/>
+     Introduzca el remitente :  <input type="text" name="remitente"><br/>
+  <br/>
+     Copia para :  <input type="text" name="copia"><br/>
+  <br/>
+     Introduzca el texto : <br/>
+  <textarea name="texto" rows="10" cols="60" placeholder="... Escribe tu mensaje aquí ..."></textarea>
+  <hr/><br/>
+  <input type="submit" name="Submit" value="Enviar">
+  <input type="reset" value="Reset">
+  </form>
+</center>
+</body>
+</html>

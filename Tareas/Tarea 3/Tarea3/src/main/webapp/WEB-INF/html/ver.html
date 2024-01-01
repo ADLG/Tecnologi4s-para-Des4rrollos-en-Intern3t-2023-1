@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Lista de mensajes</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+	<h1><b><a href="/">Inicio</a></b></h1>
+	<center>Mensajes de <span th:text="${listaMensajes[0].destinatario}"></span>
+	</center>
+	<div class="container mt-4">
+		<table class="table">
+		<thead class="thead-dark"><tr>
+			<th scope="col">Remitente</th>
+			<th scope="col">Texto</th>
+			<th scope="col">Fecha</th>
+			<th scope="col">Eliminar Mensaje</th></tr>
+		</thead>
+		<tbody>
+		<tr th:each="mensaje : ${listaMensajes}">
+			<td th:text="${mensaje.remitente}"></td>
+			<td th:text="${mensaje.texto}"></td>
+			<td th:text="${mensaje.fecha}"></td>
+			<td><a th:href="@{/eliminar/}+${mensaje.m_id}" class="btn btn-danger">Eliminar</a></td>
+		</tr>
+		</tbody>
+		</table>
+	</div>
+</body>
+</html>
